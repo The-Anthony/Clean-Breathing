@@ -1,0 +1,124 @@
+:root {
+    --HomeCol: #020301;
+    --HomeBg : #e9e9e9;
+    --HomeEmph : #2C9107;
+}
+
+.homepage {
+    margin-top: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    color: var(--HomeCol);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--HomeBg);
+}
+
+.title {
+    font-family: 'Patua One', cursive;
+    font-size: 4em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--HomeEmph);
+}
+
+.presentationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.presentationDiv h5 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.textDiv, .textDiv1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textDiv img, .textDiv1 img {
+    width: 30%;
+}
+
+.textDiv p {
+    padding: 40px;    
+    text-align: left;
+}
+
+.emph {
+    color: var(--HomeEmph);
+    font-weight: bold;
+}
+
+.hr {
+    background-color: var(--HomeEmph);
+    width: 25%;
+    height: 3px;    
+    border: 0;
+    border-radius: 1px;
+}
+
+.finalText {
+    width: 60%;
+    text-align: left;
+}
+
+.button {
+    max-width: 50%;
+    border: 0;
+    color: var(--HomeBg);
+    background-color: var(--HomeEmph);
+    font-size: 1.2em;
+    font-family: 'Varela Round', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2em auto 10vh auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #1b6600;
+}
+.button:focus{outline: none;}
+
+@media only screen and (min-width:541px) and (max-width:1024px) {
+    .presentationDiv {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .presentationDiv {width: 95%;}
+    .subtitle {width: 75%;}
+    .textDiv {
+        width: 90%;
+        flex-direction: column;
+    }
+    .textDiv1 {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    .textDiv p {padding: 5px;}
+    .textDiv img, .textDiv1 img {width: 80%;}
+    .finalText {width: 85%;}
+    .button {max-width: 50%;}
+}
+
+@media only screen and (max-width:333px) {
+    .title {font-size: 3em;}
+}

@@ -1,0 +1,31 @@
+:root {
+    --searchCol: #020301;
+    --searchBg : #e9e9e9;
+    --searchEmph : #2C9107;
+}
+
+.searchPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 15vh;
+    background-color: var(--searchBg);
+    color: var(--searchCol);
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1024px) {
+    .searchPage {
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .searchPage {
+        min-height: 75vh;
+    }
+}
+

@@ -1,0 +1,95 @@
+:root {
+    --skillsCol: #020301;
+    --skillsBg : #e9e9e9;
+    --skillsEmph : #2C9107;
+}
+
+.skills {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5vh;
+}
+
+.hSkillTitle {
+    background-color: var(--skillsEmph);
+    padding: 10px;
+    color: var(--skillsBg);
+    border-radius: 15px;
+}
+
+.sSkillTitle {
+    background-color: #0c65ad;
+    padding: 10px;
+    color: var(--skillsBg);
+    border-radius: 15px;
+}
+
+.hardSkills, .softSkills {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.competence {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 98%;
+}
+
+.bar {
+    height: 1.5vh;
+    width: 95%;
+    padding: 0;
+    border: 1px solid var(--skillsCol);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.competenceBarHtml, .competenceBarBootstrap, .competenceBarJs, .competenceBarReact, .competenceBarPython {
+    background-color: var(--skillsEmph);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.competenceBarHtml {width: 92%;}
+.competenceBarBootstrap {width: 65%;}
+.competenceBarJs {width: 80%;}
+.competenceBarReact {width: 89%;}
+.competenceBarPython {width: 73%;}
+
+.competenceBarTime, .competenceBarTeam, .competenceBarProblem, .competenceBarStress, .competenceBarLeader {
+    background-color: #0c65ad;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.competenceBarTime {width: 95%;}
+.competenceBarTeam {width: 75%;}
+.competenceBarProblem {width: 83%;}
+.competenceBarStress {width: 87%;}
+.competenceBarLeader {width: 77%;}
+
+@media only screen and (max-width:540px) {
+    .skills {flex-direction: column;}
+    .hardSkills, .softSkills {
+        width: 90%;
+    }
+}

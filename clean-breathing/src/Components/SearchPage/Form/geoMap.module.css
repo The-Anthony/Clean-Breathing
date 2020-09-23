@@ -1,0 +1,60 @@
+:root {
+    --mapCol: #020301;
+    --mapBg : #e9e9e9;
+    --mapEmph : #2C9107;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 5vh;
+}
+
+.geo {
+    width: 70%;
+    color: var(--mapCol);
+    border: 0;
+    border-bottom: 2px solid var(--mapEmph);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icon1 {
+    width: 18%;
+}
+.icon1:hover {
+    cursor: pointer;
+    width: 19%;
+}
+.text {
+    width: 50%;
+}
+
+@media only screen and (max-width: 539px) {
+    .map {
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .geo, .indexMap {
+        width: 90%;
+        height: 40vh;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1024px) {
+    .map {
+        flex-direction: column;
+        margin-top: 1vh;
+    }
+    .geo, .indexMap {
+        width: 90%;
+        height: 35vh;
+    }
+}
