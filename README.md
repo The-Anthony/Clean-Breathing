@@ -7,7 +7,7 @@ La web app consiste nel poter ricercare la propria città nel database di una AP
 
 Questo sito è realizzato con l'API gratuita offerta dal Air Quality Programmatic Project, di cui il sito ufficiale è raggiungibile [CLICCANDO QUI](http://aqicn.org/api).
 
-L'API offre oltre mille chiamate al secondo gratuite.
+L'API offre oltre migliaia di chiamate gratuite.
 _____
 
 ### Come è realizzato
